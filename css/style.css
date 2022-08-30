@@ -30,6 +30,9 @@
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
 }
+/* general */
+
+/* * { border: 1px solid red;} */
 
 html, body {
     font-size: 16px;
@@ -38,6 +41,7 @@ html, body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
 }
+
 /* top-menu */
 .top-menu {
     background-color: var(--color-theme);
@@ -57,6 +61,43 @@ html, body {
         .top-menu a:hover {
         color: var(--color-theme-dark);
         }
-    .top-menu .social-media a {
+        .top-menu .social-media a {
         margin: 0.15rem;
+        }
+        .top-menu .site-settings {
+            display: flex;
+        }
+    .top-menu .dropdown-theme {
+        background-color: var(--color-theme);
+        color: var(--color-white);
     }
+        .top-menu .dropdown-theme button {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+        }
+        .top-menu .dropdown-theme .dropdown-menu {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            width: 250px;
+        }
+        
+            .top-menu .dropdown-theme button:hover {
+                color: var(--color-theme-dark);
+
+            }
+
+            .top-menu .dropdown-theme .dropdown-menu .dropdown-item {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                width: 100%;
+                margin: 0;
+            }
+                .top-menu .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                }
+
+    

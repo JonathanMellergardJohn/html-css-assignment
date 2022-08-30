@@ -14,16 +14,28 @@
     <header>
         <div class="top-menu">
             <div class="container">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
+                <div class="site-settings">
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-currency">USD</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="menu-links">
                     <a href="#">Newsletter</a>
                     <a href="#">Contact us</a>
@@ -43,7 +55,7 @@
     </header>
 
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
-    <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
