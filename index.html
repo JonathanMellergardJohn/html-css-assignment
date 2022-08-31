@@ -10,10 +10,12 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
+                        <!-- 1 - header -->
     <header>
+                        <!-- 1.1 - top menu -->
         <div class="top-menu">
             <div class="container">
+                        <!-- 1.1.1 - language- and currency selection -->
                 <div class="site-settings">
                     <div class="dropdown dropdown-theme me-3">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +37,7 @@
                         </ul>
                     </div>
                 </div>
-
+                        <!-- 1.1.3 - links and social media icons -->
                 <div class="menu-links">
                     <span class="links">
                         <a href="#">Newsletter</a>
@@ -52,11 +54,107 @@
                     </span>
                     
                 </div>
-            
             </div>
         </div>
-    </header>
+                        <!-- 1.2 - middle menu -->
+        <div class="main-menu">
+            <div class="container">
+                        <!-- 1.2.1 - logotype -->
+                <div class="brand">
+                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
+                </div>
+                        <!-- 1.2.2 - container for search-bar, not currently in use -->
+                <div class="search"></div>
+                        <!-- 1.2.3 - user account, heart, shuffle and cart -->
+                <div class="menu-links">
+                    <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span id="cart-total">$9999</span>
+                    </a>
+                </div>
+            </div>
+                        <!-- 1.3 - bottom menu -->
+            <nav>
+                <div class="container">
+                        <!-- 1.3.1 - browse product categories-->
+                    <div class="browse-categories">
+                        <div class="dropdown dropdown-theme me-3">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><i class="fa-solid fa-bars"></i></span> <span id="browse-categories">Browse Categories</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                            </button>
+                            <ul id="product-categories" class="dropdown-menu dropdown-theme">
+                                <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Undergarments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <!-- 1.3.2 special offer -->
+                    <div class="special-offer">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+                </div>
 
+            </nav>
+        </div>   
+    </header>
+                        <!-- 2 - showcase -->
+    <div class="showcase">
+        <div class="container">
+                        <!-- 2.1 - content (left) -->
+            <div class="content">
+                <h1>Shopping is <strong>MORE FUN</strong></h1>
+                <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
+                <a href="#" class="btn btn-white btn-lg">SHOP NOW</a>
+            </div>
+                        <!-- 2.2 - image (right) -->
+            <img src="images\showcase-image.svg" alt="happy shoppers">
+            </div> 
+        </div>
+    </div>
+                        
+        
+
+                        <!-- 3 - service info -->
+        <div class="service-info">
+            <div class="container-fluid">
+                <div class="info-box">
+                    <img src="images/icons/free-shipping-icon.svg" alt="Free shipping">
+                    <div>
+                        <h1>Free shipping</h1>
+                        <p>For a local customer, we provide free shipping facility</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <img src="images/icons/24-7-icon.svg" alt="24/7 support">
+                    <div>
+                        <h1>24/7 support</h1>
+                        <p>For any inquiry, we are available 24 hours every day</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <img src="images/icons/online-payment-icon.svg" alt="Online payment">
+                    <div>
+                        <h1>Online payment</h1>
+                        <p>You can pay quickly and easily with our online payment system</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <img src="images/icons/fast-delivery-icon.svg" alt="Fast delivery">
+                    <div>
+                        <h1>Fast delivery</h1>
+                        <p>We understand your urgency and we deliver in a fast way</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    
+                        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>

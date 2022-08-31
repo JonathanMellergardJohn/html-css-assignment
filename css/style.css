@@ -40,7 +40,31 @@ html, body {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
 }
+
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+
+}
+    .btn-theme:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-theme);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+}
+    .btn-white:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-white);
+    }
 
 /* top-menu */
 
@@ -53,6 +77,9 @@ html, body {
         display: flex;
         justify-content: end;
         align-items: center;
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+
     }
 
     .top-menu .site-settings {
@@ -124,3 +151,126 @@ html, body {
         display: inline;
     }
 }
+
+/* main-menu */
+.main-menu {
+    background-color: var(--color-white);
+    color: var(--color-theme-dark);
+}
+.main-menu > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.2rem 0;
+}
+.main-menu .brand {
+    flex: 2;
+}
+.main-menu .search {
+    flex: 3;
+}
+.main-menu .links {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.main-menu .menu-links .menu-link {
+    text-decoration: none;
+    color: var(--color-theme-dark);
+    margin: 0 0.8rem;
+}
+    .main-menu .menu-links .menu-link:hover {
+        text-decoration: none;
+        color: var(--color-theme);
+    }
+    .main-menu .menu-links .menu-link:last-child {
+        text-decoration: none;
+        color: var(--color-theme-dark);
+        margin: 0 0 0 0.8rem;
+    }
+.main-menu .menu-links .menu-link i {
+    font-size: 1.33em;
+}
+.main-menu nav {
+    border-top: 1px solid var(--color-grey-3);
+    border-bottom: 1px solid var(--color-grey-3);
+}
+        .main-menu > nav > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .main-menu nav .browse-categories {
+            flex: 3;
+        }
+            .main-menu nav .browse-categories button {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+            }
+        .main-menu nav .special-offer {
+            flex: 7;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+    /* showcase */
+    .showcase {
+        background-color: var(--color-grey-3);
+    }
+
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    
+    .showcase .content {
+
+    }
+        .showcase .content h1 {
+            font-family: var(--font-play);
+            font-size: var(--font-size-60);
+        }
+        .showcase .content strong {
+            color: var(--color-theme);
+        }
+
+        /* service info */
+        .service-info {
+            padding: 4rem;
+        }
+            .service-info .container-fluid {
+                max-width: 1600px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .service-info .info-box {
+                background-color: var(--color-theme-light);
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                margin: 0 1rem;
+                flex: 1;
+                border-radius: var(--border-radius-small);
+            }   
+                .service-info .info-box:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+            }
+                .service-info .info-box img {
+                    margin-right: 1.5rem;
+                }
+                    .service-info .info-box:hover img {
+                        filter: brightness(1000%);
+                    }
+                .service-info .info-box h1 {
+                    color: var(--color-theme);
+                    font-size: 1rem;
+                    font-weight: var(--font-weight-medium);
+                }
+                    .service-info .info-box:hover h1 {
+                        color: var(--color-white);
+                    }
