@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Login" content="Login or create account">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your account</title>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+                                <!-- 1.1 - top menu -->
+        <div class="top-menu">
+            <div class="container">
+                                            <!-- 1.1.1 - language- and currency selection -->
+                <div class="site-settings">
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-currency">USD</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                        </ul>
+                    </div>
+                </div>
+                        <!-- 1.1.3 - links and social media icons -->
+                <div class="menu-links">
+                    <span class="links">
+                        <a href="#">Newsletter</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">FAQs</a>
+                    </span>
+                    <span class="social-media">
+                        <a href="#" class="fa-brands fa-facebook-f"></a>
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                        <a href="#" class="fa-brands fa-pinterest-p"></a>
+                        <a href="#" class="fa-brands fa-youtube"></a>
+                    </span>
+    
+                </div>
+            </div>
+        </div>
+                                <!-- 1.2 - middle menu -->
+        <div class="main-menu">
+            <div class="container">
+                            <!-- 1.2.1 - logotype -->
+                <div class="brand">
+                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
+                </div>
+                            <!-- 1.2.2 - container for search-bar, not currently in use -->
+                <div class="search"></div>
+                            <!-- 1.2.3 - user account, heart, shuffle and cart -->
+                <div class="menu-links">
+                    <a class="menu-link" href="#"><i class="fa-regular fa-user me-2"></i>My account</a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="cart" class="menu-link" href="#">
+                        <span class="badge rounded-pill bg-theme">0</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span>$9999</span>
+                    </a>
+                </div>
+            </div>
+                            <!-- 1.3 - bottom menu -->
+            <nav>
+                <div class="container">
+                            <!-- 1.3.1 - browse product categories-->
+                    <div class="browse-categories">
+                        <div class="dropdown dropdown-theme me-3">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><i class="fa-solid fa-bars"></i></span> <span id="browse-categories">Browse Categories</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                            </button>
+                            <ul id="product-categories" class="dropdown-menu dropdown-theme">
+                                <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                <li><a class="dropdown-item" href="#">Undergarments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 1.3.2 special offer -->
+                    <div class="special-offer">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+                </div>
+
+            </nav>
+        </div>   
+    </header>
+    <section class="login-header">
+        <div class="container">
+            <h1>My Account</h1>
+            <div class="navigate-location">
+                <p><a href="index.html">Home</a> / My account</p>
+            </div>
+        </div>
+    </section>
+    <!-- login or register -->
+    <section class="login-or-register">
+        <div class="container">
+            <div class="login-field">
+                <h1>LOGIN</h1>
+                <form action="">
+                    <div>
+                        <label for="e-mail">Email adress</label>
+                        <input type="text" id="e-mail" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-theme">LOG IN</button>
+                        <div>
+                            <div>
+                                <input type="checkbox" id="remember-me">
+                                <label for="remember-me">Remember me</label>
+                            </div>
+                            <a href="#">Lost your password?</a>
+                        </div>        
+                </form>
+                <h2>OR LOGIN WITH</h2>
+                <div>
+                    <button>Facebook</button>
+                    <button>Google</button>
+                </div>      
+            </div>
+            <div class="register-box">
+                <form action="">
+                    <h1>REGISTER</h1>
+                    <p>Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+                <form action="">
+                    <div>
+                        <label for="firstname">Firstname</label>
+                        <input type="text" id="firstname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Lastname</label>
+                        <input type="lastname" id="password" required>
+                    </div>
+                    <div>
+                        <label for="e-mail">Email adress</label>
+                        <input type="email" id="e-mail" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+                    <button type="submit" class="btn btn-theme">LOG IN</button>      
+                </form>
+    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
